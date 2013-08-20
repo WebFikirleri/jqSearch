@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Search Plugin</title>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="page-header">
+					<h2>Jquery Search Plugin</h2>
+				</div>
+				
+				<div class="page-header">
+					<h3>Examples</h3>
+				</div>
+				
+				<h4>Search in Text on List Element</h4>
+				<input type="text" id="search1" class="form-control" placeholder="search to type...">
+				<hr />
+				<ul id="search-to-1">
+					<li>Han Solo</li>
+					<li>Darth Vader</li>
+					<li>Boba Fett</li>
+					<li>R2-D2</li>
+					<li>Chewbacca</li>
+					<li>Yoda</li>
+					<li>Luke Skywalker</li>
+					<li>Darth Maul</li>
+					<li>Stormtrooper</li>
+					<li>Princess Leia</li>
+					<li>Ben Kenobi</li>
+					<li>Anakin Skywalker</li>
+				</ul>
+				<h4>Search in Text on Paragraph Element</h4>
+				<input type="text" id="search2" class="form-control" placeholder="search to type...">
+				<hr />
+				<div id="search-to-2">
+					<p>Han Solo</p>
+					<p>Darth Vader</p>
+					<p>Boba Fett</p>
+					<p>R2-D2</p>
+					<p>Chewbacca</p>
+					<p>Yoda</p>
+					<p>Luke Skywalker</p>
+					<p>Darth Maul</p>
+					<p>Stormtrooper</p>
+					<p>Princess Leia</p>
+					<p>Ben Kenobi</p>
+					<p>Anakin Skywalker</p>
+				</div>
+				
+				<h4>Search in Data on div Element</h4>
+				<input type="text" id="search3" class="form-control" placeholder="search to type...">
+				<hr />
+				<div id="search-to-3">
+					<div data-search-data="Han Solo">
+						<div class="well well-sm">Han Solo</div>
+					</div>
+					<div data-search-data="Darth Vader">
+						<div class="well well-sm">Darth Vader</div>
+					</div>
+					<div data-search-data="Boba Fett">
+						<div class="well well-sm">Boba Fett</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="js/jquery-search.1.0.js"></script>
+	
+	<script>
+		$('#search-to-1 li').jqSearch({
+			searchInput			: '#search1',
+			searchTarget		: 'text'
+		});
+		
+		$('#search-to-2 p').jqSearch({
+			searchInput			: '#search2',
+			searchTarget		: 'text',
+			animation			: 'slide'
+		});
+		
+		$('#search-to-3 > div').jqSearch({
+			searchInput			: '#search3',
+			searchTarget		: 'data'
+		});
+	</script>
+	
+</body>
+</html>
