@@ -1,0 +1,4 @@
+jqSearch
+========
+
+jQuery Search Plugin
