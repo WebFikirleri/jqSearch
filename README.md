@@ -53,4 +53,4 @@ Or you can also search in text:
 |searchData|*search-data*|any text for $.data()|If you choose `data` as *searchTarget* you can define which data element it will search. `( $(this).data(searchData) )`|
 |animation|*fade*|`fade` or `slide`|You can choose hide and show animation with this option. There is just two animation type.|
 
-![Counter](https://webfikirleri.com/counter?url=https://github.com/WebFikirleri/jqSearch)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FWebFikirleri%2FjqSearch&count_bg=%233D8FC8&title_bg=%23555555&icon=microsoftacademic.svg&icon_color=%23E7E7E7&title=VISITS&edge_flat=true)](https://hits.seeyoufarm.com)
