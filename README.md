@@ -1,8 +1,10 @@
-#jQuery Search Plugin
+# jQuery Search Plugin
 
 This plugin is utilize to search selected elements and filter them.
 
-##Usage
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z2LXJ6H)
+
+## Usage
     
     <input type="text" id="search" />
     
@@ -13,7 +15,7 @@ This plugin is utilize to search selected elements and filter them.
       $('.search-in').jqSearch();
     </script>
     
-###Customize
+### Customize
 
     <input type="text" id="search-2" />
     
@@ -44,7 +46,7 @@ Or you can also search in text:
       });
     </script>
     
-##Options
+## Options
 
 |Option Name|Default Value|Choices|Explanation|
 |---|---|---|---|
